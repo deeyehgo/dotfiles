@@ -44,7 +44,6 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 	# insanely beautiful diffs
-	pager = diff-highlight | diff-so-fancy | less -r 
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -86,3 +85,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[credential]
+	helper = osxkeychain
