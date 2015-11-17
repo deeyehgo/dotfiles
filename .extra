@@ -9,6 +9,7 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # The top-most paths override here.
       PATH=/opt/local/bin
 PATH=$PATH:/usr/bin
+PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/opt/local/sbin
