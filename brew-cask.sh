@@ -15,7 +15,6 @@ brew cask install spectacle
 # brew cask install dropbox
 brew cask install gyazo
 # brew cask install onepassword
-brew cask install rescuetime
 brew cask install flux
 
 # dev
@@ -26,6 +25,6 @@ brew cask install imageoptim
 
 # browsers
 # brew cask install google-chrome-canary
-# brew cask install firefox-nightly
-# brew cask install webkit-nightly
-# brew cask install chromium
+brew cask install firefox-nightly
+brew cask install webkit-nightly
+brew cask install chromium

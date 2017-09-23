@@ -2,6 +2,7 @@
 SLACK_SYNC_DEV_AUTO_ATTACH=1
 
 NPM_PACKAGES="$HOME/.npm-packages"
+NPM_GLOBAL="$HOME/npm-global"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
@@ -12,6 +13,8 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # The top-most paths override here.
       PATH=/opt/local/bin
 PATH=$PATH:/usr/bin
+# PATH=$PATH:$(brew --prefix coreutils)/libexec/gnubin
+PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/opt/local/sbin
@@ -19,6 +22,7 @@ PATH=$PATH:/bin
 PATH=$PATH:$HOME/bin
 PATH=$PATH:~/.rvm/bin
 PATH=$PATH:$NPM_PACKAGES/bin
+PATH=$PATH:$NPM_GLOBAL/bin
 
 # ...
 

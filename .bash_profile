@@ -78,7 +78,7 @@ fi;
 
 # homebrew completion
 if  which brew > /dev/null; then
-    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+    source "$(brew --prefix)/etc/bash_completion.d/brew"
 fi;
 
 # git completion
@@ -109,3 +109,6 @@ shopt -s cdspell;
 
 
 
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/Users/diego/anaconda/bin:$PATH"
