@@ -2,9 +2,10 @@
 #   ~/.extra can be used for settings you don’t want to commit,
 #   Use it to configure your PATH, thus it being first in line.
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
-    echo "$file"
+    # echo "$file"
     [ -r "$file" ] && source "$file"
 done
+echo "✌_(◕‿◕)_✌"
 unset file
 
 # to help sublimelinter etc with finding my PATHS
